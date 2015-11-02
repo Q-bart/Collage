@@ -1,0 +1,27 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+
+	<html>
+	<head>
+		<link rel='stylesheet' type='text/css' href={% static 'static/css/foundation.css' %}>
+		<title>Колаж</title>
+	</head>
+	<body>
+		<div class="top-bar">
+			<section class='top-bar-section'>
+				<ul class="title-area">
+					<li class="name">
+						<h1><a href='/'>Колаж</a></h1>
+					</li>
+				</ul>
+			</section>
+		</div>
+
+	<div class='row'>
+	{% block main %}{% endblock %}
+
+
+	</div>
+
+	</body>
+	</html>
